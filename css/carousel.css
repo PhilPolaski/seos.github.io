@@ -1,0 +1,588 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+.body {
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 600px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+background: rgba(38, 111, 159, 0.52);
+  z-index: 10;
+  margin-bottom: 0px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+  color:#26527D;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+/** .featurette-divider {
+ *  margin: 80px 0; Space out the Bootstrap <hr> more 
+}  */ 
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* footer separation */
+.home-tab {
+line-height: 3em;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width:340px) {
+
+/* Carousel base class */
+.carousel {
+  height: 300px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+background: rgba(38, 111, 159, 0.52);
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 300px;
+}
+
+.carousel-control.left {
+height: 100%;
+}
+
+.carousel-caption .btn {
+font-size: 20px;
+}
+
+.home-tab {
+line-height: 3em;
+text-align: center;
+}
+
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+margin-left: 0px;
+}
+}
+/* Responsive for 768 plus */
+@media (min-width: 768px) {
+
+.col-md-5 {
+padding-top: 80px;
+width: 41.666666667%;
+}
+
+.col-md-7 {
+width: 58.33333333%;
+}
+
+
+/* Carousel base class */
+.carousel {
+  height: 300px;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+background: rgba(38, 111, 159, 0.52);
+  z-index: 10;
+  margin-bottom: 0px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 300px;
+}
+
+.carousel-caption .btn {
+font-size: 18px;
+}
+
+/* Bump up size of carousel content */
+.carousel-caption h2 {
+              font-size: 28px;
+}
+
+  .carousel-caption p {
+    margin-bottom: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  
+  .bs-docs-featurette-title {
+font-size: 36px;
+
+}
+.lead {
+font-size: 20px;
+}
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  .navbar-default .navbar-nav>li>a {
+font-size: 1.2em;
+/* font-size: 1.3em; */
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+color: #333;
+font-size: 1.2em;
+background-color: transparent;
+}
+
+.nav>li>a {
+position: relative;
+display: block;
+/* padding: 17px 5px; */
+}
+
+.navbar-default .navbar-brand {
+	color:#fff;
+	font-size: 1.4em;
+	padding-right:20px;
+	
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+color: #666666;
+font-size: 1.4em;
+padding-right: 20px;
+background-color: transparent;
+}
+
+.navbar-brand {
+float: left;
+height: 50px;
+padding: 15px;
+}
+
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+margin-left: 0px;
+}
+
+.navbar-nav.navbar-right: {
+font-size: 10px;
+}
+  
+
+.featurette-heading {
+    font-size: 50px;
+  }
+}
+
+#social-icons img{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+/* responsive for 992 */
+@media (min-width: 992px) {
+
+.col-md-5 {
+padding-top: 90px;
+}
+
+.col-md-7 {
+width: 58.33333333%;
+}
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+   margin-top: 0px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+background: rgba(38, 111, 159, 0.52);
+  z-index: 10;
+  margin-bottom: 40px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+.bs-docs-featurette-title {
+font-size: 36px;
+
+}
+.lead {
+font-size: 20px;
+}
+
+.marketing h2 {
+font-size: 42px;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+margin-left: -30px;
+}
+
+.navbar-default .navbar-brand {
+	color:#fff;
+	font-size: 1.0em;
+	padding-right:10px;
+	
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+color: #666666;
+font-size: 1.0em;
+padding-right: 10px;
+background-color: transparent;
+}
+
+
+.carousel-caption h2 {
+              font-size: 36px;
+}
+
+.carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.4;
+	padding-right: 10px;
+	padding-left: 10px;
+  }
+
+.featurette-heading {
+    font-size: 50px;
+  }
+
+.home-tab {
+font-size: 15px;
+}
+
+
+.featurette-heading {
+    margin-top: 120px;
+  }
+  
+  .bs-docs-featurette-title {
+font-size: 48px;
+}
+}
+
+/* Responsive for 1200 plus */
+@media (min-width:1200px) {
+
+.col-md-5 {
+padding-top: 60px;
+}
+
+.col-md-7 {
+width: 58.33333333%;
+}
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+   margin-top: 0px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+background: rgba(38, 111, 159, 0.52);
+  z-index: 10;
+  margin-bottom:100px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.carousel-caption .btn {
+font-size: 20px;
+}
+
+.carousel-caption h2 {
+              font-size: 44px;
+}
+.carousel-caption p {
+              font-size: 36px;
+			  padding-right: 10px;
+	          padding-left: 10px;
+}
+
+.home-tab {
+font-size: 17px;
+}
+
+.navbar-default .navbar-brand {
+	color:#fff;
+	font-size: 1.5em;
+	padding-right:50px;
+	
+}
+
+.navbar-default .navbar-nav>li>a {
+font-size: 1.3em;
+/* font-size: 1.3em; */
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+color: #666666;
+font-size: 1.5em;
+padding-right: 50px;
+background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+color: #333;
+font-size: 1.3em;
+background-color: transparent;
+}
+.navbar-brand {
+float: left;
+height: 50px;
+padding: 10px 15px;
+}
+
+.nav>li>a {
+position: relative;
+display: block;
+padding: 15px 15px;
+}
+
+.bs-docs-featurette-title {
+font-size: 58px;
+color: #266F9F;
+}
+
+}
+
+/* Responsive for 1400 plus */
+@media (min-width:1400px) {
+
+.col-md-5 {
+padding-top: 60px;
+}
+
+.col-md-7 {
+width: 58.33333333%;
+}
+
+/* Carousel base class */
+.carousel {
+  height: 600px;
+   margin-top: 0px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+background: rgba(38, 111, 159, 0.52);
+  z-index: 10;
+  margin-bottom:100px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
+}
+
+.carousel-caption h2 {
+              font-size: 50px;
+}
+.carousel-caption p {
+              font-size: 43px;
+			  padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* Responsive for 1550 plus */
+@media (min-width:1550px) {
+
+.col-md-5 {
+padding-top: 60px;
+}
+
+.col-md-7 {
+width: 58.33333333%;
+}
+
+.col-md-5 {
+padding-top: 60px;
+}
+
+
+/* Carousel base class */
+.carousel {
+  height: 600px;
+   margin-top: 0px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+background: rgba(38, 111, 159, 0.52);
+  z-index: 10;
+  margin-bottom:100px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
+}
+
+.carousel-caption .btn {
+font-size: 22px;
+}
+
+.carousel-caption h2 {
+              font-size: 58px;
+}
+.carousel-caption p {
+              font-size: 50px;
+			  padding-right: 10px;
+	padding-left: 10px;
+
+}
+
+}
